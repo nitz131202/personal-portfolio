@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { srConfig } from '@config';
 import sr from '@utils/sr';
 import { usePrefersReducedMotion } from '@hooks';
-import meImg from '../../images/me.jpg'; // ✅ Correct image import
+import meImg from '../../images/me.jpg'; // Correct image import
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
@@ -120,7 +120,9 @@ const About = () => {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   useEffect(() => {
-    if (prefersReducedMotion) {return;}
+    if (prefersReducedMotion) {
+      return;
+    }
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
@@ -134,18 +136,16 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hi! I am Sreenithya Mallavarapu, a graduate student in Biological Systems Engineering
-              at the University of Wisconsin Madison majoring in Biological Systems Engineering. My
-              academic and research journey has led me to the exciting crossroads of biology, data
-              science, and computational modeling.
+              Hi! I am Sreenithya Mallavarapu, a graduate student at the University of
+              Wisconsin-Madison majoring in Biological Systems Engineering. My academic and research
+              journey has led me to the exciting crossroads of biology, data science, and
+              computational modeling.
             </p>
 
             <p>
               I am passionate about bioinformatics — especially how we can use genomic,
               transcriptomic, and clinical data to better understand disease mechanisms, discover
-              therapeutic targets, and personalize healthcare. I’m especially interested in applying
-              statistical genetics, functional genomics, and AI-powered analytics to problems in
-              health and medicine.
+              therapeutic targets, and personalize healthcare.
             </p>
 
             <p>

@@ -1,6 +1,6 @@
 ---
 date: '2024-01-01'
-title: 'Indian Institute of Technology Jodhpur'
+title: 'IIT Jodhpur'
 cover: './demo.png'
 github: ''
 external: ''
