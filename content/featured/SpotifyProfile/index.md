@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '2024-01-01'
 title: 'Indian Institute of Technology Jodhpur'
 cover: './demo.png'
 github: ''
